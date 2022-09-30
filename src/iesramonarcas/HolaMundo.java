@@ -19,7 +19,7 @@ public class HolaMundo {
         System.out.println("Hola JAVA");
         System.out.println("\033[35mTexto en magenta");
         System.out.println("Manzana en UNICODE:\uF8FF");
-        System.out.println("Manzana en UNICODE:\u2051");
+        System.out.println("Estrellas en UNICODE:\u2051");
         
         
         
