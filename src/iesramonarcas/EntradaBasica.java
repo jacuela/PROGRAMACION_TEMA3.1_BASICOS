@@ -1,0 +1,86 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package iesramonarcas;
+
+import java.util.Scanner;
+
+
+
+
+
+/**
+ *
+ * @author jacuela
+ */
+public class EntradaBasica {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        
+        String nombre;
+        int edad;
+        double estatura;
+
+        //Usando la clase Scanner leyendo linea a linea
+        Scanner teclado = new Scanner(System.in); 
+
+        // **** RECOGIENDO VALORES EN VARIAS LINEAS
+//        System.out.print("Introduce tu nombre: ");
+//        nombre = teclado.nextLine();
+//
+//        System.out.print("Introduce tu edad: ");
+//        edad = Integer.parseInt(teclado.nextLine());
+//
+//        System.out.print("Estatura (con decimales .): ");
+//        estatura = Double.parseDouble(teclado.nextLine());
+//        
+//        System.out.println("Tu nombre es " + nombre + ", tiens " + edad + "años y mides "+estatura);    
+//        System.out.printf("Tu nombre es %s, tienes %d años y mides %.2f m\n",nombre,edad,estatura);
+
+
+        // ********    Usando la clase Scanner leyendo varios elementos por linea
+//        System.out.print("Introduce tu nombre y tu edad separados por un espacio: "); 
+//        nombre = teclado.next();
+//        edad = teclado.nextInt();
+//        System.out.println("Tu nombre es " + nombre + " y tu edad es " + edad);
+
+
+
+//        //Leyendo varios valores de tipo double
+//        System.out.println("Introduce tres números "
+//                            + "(pueden contener decimales, usando ',') "
+//                            + "separados por espacios: ");
+//        double x1 = s.nextDouble(); 
+//        double x2 = s.nextDouble(); 
+//        double x3 = s.nextDouble();
+//
+//        System.out.println("Has introducido los siguientes valores:");
+//        System.out.println(x1);
+//        System.out.println(x2);
+//        System.out.println(x3);
+//
+//        double media = (x1 + x2 + x3) / 3;
+//        System.out.println("La media de esos tres números es " + media);
+//
+//      
+        //El error de usar usar nextInt / nextDouble   
+        int num;
+        String cadena;
+        System.out.print("Introduce num:");
+        num=teclado.nextInt();
+        System.out.println("Has introducido el numero -->"+num);
+
+        System.out.print("Introduce cadena:");
+        cadena=teclado.next();
+        System.out.println("Has introducido la cadena -->"+cadena);
+
+  
+    }
+    
+}
