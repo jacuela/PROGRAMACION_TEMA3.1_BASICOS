@@ -18,9 +18,9 @@ public class HolaMundo {
         // TODO code application logic here
         System.out.println("Hola JAVA");
         System.out.println("\033[35mTexto en magenta");
-        System.out.println("Manzana en UNICODE:\uF8FF");
         System.out.println("Estrellas en UNICODE:\u2051");
-        
+        System.out.println("Manzana en UNICODE:\uF8FF");
+
         
         
         
