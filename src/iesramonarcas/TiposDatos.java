@@ -149,7 +149,7 @@ public class TiposDatos {
         
         // Descomenta la siguiente línea y observa cómo cambia el resultado.
         //division = a / b;
-        System.out.println("El resultado de la división es " + division);
+        System.out.println("El resultado de la división es: " + division);
     
         
         
