@@ -19,15 +19,16 @@ public class HolaMundo {
         System.out.println("Hola JAVA");
         System.out.println("\033[35mTexto en magenta");
         System.out.println("Estrellas en UNICODE:\u2051");
-        System.out.println("Manzana en UNICODE:\uF8FF");
-
-        
         
         
         //Esto es un comentario de 1 linea
+        
         /* Esto es un comentario de
            varias lineas.
         */
+        
+        //Esto es un comentario de
+        //varias lineas.
         
         
     }

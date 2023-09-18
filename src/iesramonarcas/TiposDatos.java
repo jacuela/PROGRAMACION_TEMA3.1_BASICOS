@@ -39,31 +39,26 @@ public class TiposDatos {
         System.out.println("Tipo double:"+undouble);
         System.out.printf("Tipo double:%.5f\n",undouble); //5 decimales
         
-        
-        
-        
         //***********************************+
         //  Cadenas y caracteres
-                
-        String cadena="hoy es viernes!!";
+        System.out.println("-------------------------------------------");        
+        String nombre="Juan";
+        String apellido="Cuello";
        
-        char letra1='J';   //caracter. con comillas simples
-        char letra2='U';
-        char letra3='A';
-        char letra4;
-        letra4='N';
+        char sexo='M';   //caracter. con comillas simples
         
         
-        System.out.println("Una cadena:"+cadena);
-        System.out.println("Una letra:"+letra1);
-        System.out.println("Mi nombre:"+letra1+letra2+letra3+letra4);
+        System.out.println("Mi nombre es :"+nombre);
+        System.out.println("Mi apellido es:"+apellido);
+        System.out.println("Mi nombre es: "+nombre+" "+apellido+" SEXO:"+sexo);
+        //Observa como con printf es mas sencillo conseguir el formato
+        System.out.printf("Mi nombre es: %s %s SEXO:%c\n",nombre,apellido,sexo);
         
         
-     
-        
+
         //**********************************************
         // Booleanos (verdadero y falso)
-        
+        System.out.println("-------------------------------------------");
         boolean esCorrecto=true;
         boolean esFalso=false;
        
@@ -81,6 +76,8 @@ public class TiposDatos {
 
         //**********************************************
         //OPERACIONES ARITMÉTICAS BASICAS
+        System.out.println("-------------------------------------------");
+
         int x=8;
         int y=6;
         int z=0;
@@ -100,19 +97,18 @@ public class TiposDatos {
         
         //Mirar como trunca la división a entero
         resultado=x/y;
-        System.out.println("[division con enteros] Si divido y/x sale:"+resultado);
+        System.out.println("[division con enteros] Si divido "+x+"/"+y+" sale:"+resultado);
         
-        double resultadoDouble=x/y;
-        System.out.println("[division con enteros y asigno a double] Si divido y/x en un double sale:"+resultadoDouble);
-        
-        resultadoDouble=(double)x/y;
-        System.out.println("[division con doubles] Si divido y/x en un double sale:"+resultadoDouble);
+        double resultadoDouble=(double)x/y;
+        System.out.println("[division con casting a double] Si divido "+x+"/"+y+" y hago casting sale:"+resultadoDouble);
         
         //Ojo a la división por cero
-        System.out.println("Si divido y/z sale:"+y/z);
+//      System.out.println("Si divido y/z sale:"+y/z);
         
       
+        
         //Los caracteres se pueden sumar. Las cadenas NO
+        System.out.println("-------------------------------------------");
         int suma_caracteres;
         char letraV='V';
         char letraX='X';        
@@ -137,21 +133,6 @@ public class TiposDatos {
 //        
 
 
-
-        
-        //************************************************
-        //CONVERSION DE TIPOS    
-        
-        int a = 9;
-        int b = 2; 
-        double division;
-        division = (double) a / (double) b;
-        
-        // Descomenta la siguiente línea y observa cómo cambia el resultado.
-        //division = a / b;
-        System.out.println("El resultado de la división es: " + division);
-    
-        
         
         
     }

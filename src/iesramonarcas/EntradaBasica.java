@@ -45,12 +45,13 @@ public class EntradaBasica {
 
 
         // ********    Usando la clase Scanner leyendo varios elementos por linea
-//        System.out.print("Introduce tu nombre y tu edad separados por un espacio: "); 
-//        nombre = teclado.next();
-//        edad = teclado.nextInt();
-//        System.out.println("Tu nombre es " + nombre + " y tu edad es " + edad);
+        System.out.print("Introduce tu nombre y tu edad separados por un espacio: "); 
+        nombre = teclado.next();
+        edad = teclado.nextInt();
+        System.out.println("Tu nombre es " + nombre + " y tu edad es " + edad);
 
-
+        
+        
 
 //        //Leyendo varios valores de tipo double
 //        System.out.println("Introduce tres números "
@@ -69,16 +70,22 @@ public class EntradaBasica {
 //        System.out.println("La media de esos tres números es " + media);
 //
 //      
-        //El error de usar usar nextInt / nextDouble   
-        int num;
-        String cadena;
-        System.out.print("Introduce num:");
-        num=teclado.nextInt();
-        System.out.println("Has introducido el numero -->"+num);
+        //El error de mezclar nextInt / nextDouble con nextLine()
+        System.out.print("Introduce tu nombre y tu edad separados por un espacio: "); 
+        nombre = teclado.next();
+        edad = teclado.nextInt();
+        System.out.println("Tu nombre es " + nombre + " y tu edad es " + edad);
 
-        System.out.print("Introduce cadena:");
-        cadena=teclado.next();
-        System.out.println("Has introducido la cadena -->"+cadena);
+        //Para evitar el error
+        teclado.nextLine(); //limpimos el buffer
+        
+        
+        // .....mas tarde en otra parte del programa
+        System.out.print("Introduce un dato: ");
+        String dato=teclado.nextLine();  //recojo otro dato
+        System.out.println("Dato:"+dato);
+        
+        
 
   
     }
