@@ -23,9 +23,9 @@ public class TiposDatos {
 
         //****************************************
         //  Tipos numéricos
-        
         int unEntero=5;      //Tipo entero corto de 32 bits
-        System.out.println("Tipo int:"+unEntero);
+        System.out.println(unEntero);
+        System.out.println("Tipo int-> "+unEntero);
         
         long unlong;     //Tipo entero largo de 64 bits  
         unlong=5;
@@ -54,6 +54,14 @@ public class TiposDatos {
         //Observa como con printf es mas sencillo conseguir el formato
         System.out.printf("Mi nombre es: %s %s SEXO:%c\n",nombre,apellido,sexo);
         
+        System.out.println("-------------------------------------------");        
+
+        //No puedo definir variables 2 veces
+        //String nombre="Alicia";
+        //Pero sí puedo usarlas más adelante
+        nombre="Alicia";
+        //Ojo con los tipos de las variables
+        nombre="45";
         
 
         //**********************************************
@@ -83,6 +91,8 @@ public class TiposDatos {
         int z=0;
         int resultado;
         
+        System.out.println("x:"+x);System.out.println("y:"+y);
+        
         resultado=x+y;
         System.out.println("Resultado de sumar x e y es:"+resultado);
         
@@ -100,35 +110,39 @@ public class TiposDatos {
         System.out.println("[division con enteros] Si divido "+x+"/"+y+" sale:"+resultado);
         
         double resultadoDouble=(double)x/y;
-        System.out.println("[division con casting a double] Si divido "+x+"/"+y+" y hago casting sale:"+resultadoDouble);
+        System.out.println("[division con casting a double] Si divido "+x+"/"+y+" y ha"
+                + "go casting sale:"+resultadoDouble);
         
         //Ojo a la división por cero
-//      System.out.println("Si divido y/z sale:"+y/z);
+        System.out.println("Si divido y/z sale:"+y/z);
+//        
+//      
+    //***************************************************
+        //Si una variable no toma valor en ningun momento,
+        //nos da error. 
+        int numA;   //vale por defecto 0
+        String cadenaC;   //vale por defecto null
         
-      
-        
-        //Los caracteres se pueden sumar. Las cadenas NO
-        System.out.println("-------------------------------------------");
-        int suma_caracteres;
-        char letraV='V';
-        char letraX='X';        
-        suma_caracteres=letraV+letraX;
-        System.out.println("El carcter V y el X suman:"+suma_caracteres);
-        
-        
-        System.out.println("El codifo ASCII de 'X' es:"+(int)letraX);
-        System.out.println("El codifo ASCII de 'V' es:"+(int)letraV);
-        
+        System.out.println("Valor por defecto de numA:"+numA);
+        System.out.println("Valor por defecto de cadenaC:"+cadenaC);
         
 
-//        //***************************************************
-//        //Si una variable no toma valor en ningun momento,
-//        //nos da error. 
-//        int numA;
-//        String cadenaC;
+
+//        //Los caracteres se pueden sumar. Las cadenas NO
+//        System.out.println("-------------------------------------------");
+//        int suma_caracteres;
+//        char letraV='V';
+//        char letraX='X';        
+//        suma_caracteres=letraV+letraX;
+//        System.out.println("El carcter V y el X suman:"+suma_caracteres);
 //        
-//        System.out.println("Valor por defecto de int:"+numA);
-//        System.out.println("Valor por defecto de int:"+cadenaC);
+//        
+//        System.out.println("El codifo ASCII de 'X' es:"+(int)letraX);
+//        System.out.println("El codifo ASCII de 'V' es:"+(int)letraV);
+//        
+//        
+
+//    
 //
 //        
 

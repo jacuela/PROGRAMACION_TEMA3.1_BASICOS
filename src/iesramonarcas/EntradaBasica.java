@@ -76,8 +76,8 @@ public class EntradaBasica {
         edad = teclado.nextInt();
         System.out.println("Tu nombre es " + nombre + " y tu edad es " + edad);
 
-        //Para evitar el error
-        teclado.nextLine(); //limpimos el buffer
+        //Para evitar el error, descomentar despues de ver el error
+        //teclado.nextLine(); //limpiamos el buffer
         
         
         // .....mas tarde en otra parte del programa
