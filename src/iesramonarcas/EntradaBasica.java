@@ -11,6 +11,7 @@ import java.util.Scanner;
 
 
 
+
 /**
  *
  * @author jacuela
@@ -23,32 +24,33 @@ public class EntradaBasica {
     public static void main(String[] args) {
         // TODO code application logic here
         
+        //Usando la clase Scanner leyendo linea a linea
+        Scanner teclado = new Scanner(System.in); 
+        
         String nombre;
         int edad;
         double estatura;
 
-        //Usando la clase Scanner leyendo linea a linea
-        Scanner teclado = new Scanner(System.in); 
+        
+        //**** RECOGIENDO VALORES EN VARIAS LINEAS
+        System.out.print("Introduce tu nombre: ");
+        nombre = teclado.nextLine();
 
-        // **** RECOGIENDO VALORES EN VARIAS LINEAS
-//        System.out.print("Introduce tu nombre: ");
-//        nombre = teclado.nextLine();
-//
-//        System.out.print("Introduce tu edad: ");
-//        edad = Integer.parseInt(teclado.nextLine());
-//
-//        System.out.print("Estatura (con decimales .): ");
-//        estatura = Double.parseDouble(teclado.nextLine());
-//        
-//        System.out.println("Tu nombre es " + nombre + ", tiens " + edad + "años y mides "+estatura);    
-//        System.out.printf("Tu nombre es %s, tienes %d años y mides %.2f m\n",nombre,edad,estatura);
+        System.out.print("Introduce tu edad: ");
+        edad = Integer.parseInt(teclado.nextLine());
+
+        System.out.print("Estatura (con decimales .): ");
+        estatura = Double.parseDouble(teclado.nextLine());
+        
+        System.out.println("Tu nombre es " + nombre + ", tiens " + edad + "años y mides "+estatura);    
+        System.out.printf("Tu nombre es %s, tienes %d años y mides %.2f m\n",nombre,edad,estatura);
 
 
-        // ********    Usando la clase Scanner leyendo varios elementos por linea
-        System.out.print("Introduce tu nombre y tu edad separados por un espacio: "); 
-        nombre = teclado.next();
-        edad = teclado.nextInt();
-        System.out.println("Tu nombre es " + nombre + " y tu edad es " + edad);
+//        // ********    Usando la clase Scanner leyendo varios elementos por linea
+//        System.out.print("Introduce tu nombre y tu edad separados por un espacio: "); 
+//        nombre = teclado.next();
+//        edad = teclado.nextInt();
+//        System.out.println("Tu nombre es " + nombre + " y tu edad es " + edad);
 
         
         
@@ -70,21 +72,21 @@ public class EntradaBasica {
 //        System.out.println("La media de esos tres números es " + media);
 //
 //      
-        //El error de mezclar nextInt / nextDouble con nextLine()
-        System.out.print("Introduce tu nombre y tu edad separados por un espacio: "); 
-        nombre = teclado.next();
-        edad = teclado.nextInt();
-        System.out.println("Tu nombre es " + nombre + " y tu edad es " + edad);
-
-        //Para evitar el error, descomentar despues de ver el error
-        //teclado.nextLine(); //limpiamos el buffer
-        
-        
-        // .....mas tarde en otra parte del programa
-        System.out.print("Introduce un dato: ");
-        String dato=teclado.nextLine();  //recojo otro dato
-        System.out.println("Dato:"+dato);
-        
+//        //El error de mezclar nextInt / nextDouble con nextLine()
+//        System.out.print("Introduce tu nombre y tu edad separados por un espacio: "); 
+//        nombre = teclado.next();
+//        edad = teclado.nextInt();
+//        System.out.println("Tu nombre es " + nombre + " y tu edad es " + edad);
+//
+//        //Para evitar el error, descomentar despues de ver el error
+//        //teclado.nextLine(); //limpiamos el buffer
+//        
+//        
+//        // .....mas tarde en otra parte del programa
+//        System.out.print("Introduce un dato: ");
+//        String dato=teclado.nextLine();  //recojo otro dato
+//        System.out.println("Dato:"+dato);
+//        
         
 
   
