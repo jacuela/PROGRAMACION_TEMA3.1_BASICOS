@@ -33,26 +33,27 @@ public class EntradaBasica {
 
         
         //**** RECOGIENDO VALORES EN VARIAS LINEAS
-        System.out.print("Introduce tu nombre: ");
-        nombre = teclado.nextLine();
+//        System.out.print("Introduce tu nombre: ");
+//        nombre = teclado.nextLine();
+//
+//        System.out.print("Introduce tu edad: ");
+//        edad = Integer.parseInt(teclado.nextLine());
+//
+//        System.out.print("Estatura (con decimales .): ");
+//        estatura = Double.parseDouble(teclado.nextLine());
+//        
+//        System.out.println("Tu nombre es " + nombre + ", tiens " + edad + "años y mides "+estatura);    
+//        System.out.printf("Tu nombre es %s, tienes %d años y mides %.2f m\n",nombre,edad,estatura);
 
-        System.out.print("Introduce tu edad: ");
-        edad = Integer.parseInt(teclado.nextLine());
 
-        System.out.print("Estatura (con decimales .): ");
-        estatura = Double.parseDouble(teclado.nextLine());
-        
-        System.out.println("Tu nombre es " + nombre + ", tiens " + edad + "años y mides "+estatura);    
-        System.out.printf("Tu nombre es %s, tienes %d años y mides %.2f m\n",nombre,edad,estatura);
+        // ********    Usando la clase Scanner leyendo varios elementos por linea
+        System.out.print("Introduce nombre, edad, altura (decimales con coma) separados por un espacio: "); 
+        nombre = teclado.next();
+        edad = teclado.nextInt();
+        estatura = teclado.nextDouble();
+        System.out.println("Tu nombre es " + nombre + ", tu edad es " + edad + " y mides "+estatura);
+        System.out.printf("Tu nombre es %s, tu edad es %d y mides %.2f\n", nombre,edad,estatura);
 
-
-//        // ********    Usando la clase Scanner leyendo varios elementos por linea
-//        System.out.print("Introduce tu nombre y tu edad separados por un espacio: "); 
-//        nombre = teclado.next();
-//        edad = teclado.nextInt();
-//        System.out.println("Tu nombre es " + nombre + " y tu edad es " + edad);
-
-        
         
 
 //        //Leyendo varios valores de tipo double
