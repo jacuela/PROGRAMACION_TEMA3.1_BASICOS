@@ -9,14 +9,18 @@ package iesramonarcas;
  *
  * @author jacuela
  */
-public class HolaMundo {
+public class SalidaBasica {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        System.out.println("Hola JAVA");
+        System.out.print("Imprimo sin saltar de linea.");
+        System.out.println("Continuo en la linea anterior.");
+        System.out.println("Esto ya va en otra linea");
+        
+        System.out.println(""); //meto un salto de linea
         System.out.println("\033[35mTexto en magenta");
         System.out.println("Cruz en UNICODE:\u2020");
         
