@@ -87,7 +87,7 @@ public class EntradaBasica {
 //        System.out.print("Introduce un dato: ");
 //        String dato=teclado.nextLine();  //recojo otro dato
 //        System.out.println("Dato:"+dato);
-//        
+
         
 
   
