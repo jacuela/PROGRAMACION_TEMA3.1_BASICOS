@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package iesramonarcas;
+package ejercicios;
 
 /**
  *
@@ -27,6 +27,7 @@ public class TiposDatos {
         System.out.println(unEntero);
         System.out.println("Tipo int-> "+unEntero);
         
+        
         long unlong;     //Tipo entero largo de 64 bits  
         unlong=5;
         System.out.println("Tipo long:"+unlong);
@@ -38,6 +39,8 @@ public class TiposDatos {
         undouble=3.1415;
         System.out.println("Tipo double:"+undouble);
         System.out.printf("Tipo double:%.5f\n",undouble); //5 decimales
+        
+        
         
         //***********************************+
         //  Cadenas y caracteres
@@ -84,8 +87,8 @@ public class TiposDatos {
 
         //**********************************************
         //OPERACIONES ARITMÉTICAS BASICAS
-        System.out.println("-------------------------------------------");
-
+//        System.out.println("-------------------------------------------");
+//
         int x=8;
         int y=6;
         int z=0;
@@ -114,31 +117,31 @@ public class TiposDatos {
                 + "go casting sale:"+resultadoDouble);
         
         //Ojo a la división por cero
-        System.out.println("Si divido y/z sale:"+y/z);
-//        
-//      
+       // System.out.println("Si divido y/z sale:"+y/z);
+        
+        
     //***************************************************
         //Si una variable no toma valor en ningun momento,
         //nos da error. 
-        int numA;   //vale por defecto 0
-        String cadenaC;   //vale por defecto null
+        int numA;   
+        String cadenaC;   
         
-        System.out.println("Valor por defecto de numA:"+numA);
-        System.out.println("Valor por defecto de cadenaC:"+cadenaC);
+    //    System.out.println("Valor por defecto de numA:"+numA);
+    //    System.out.println("Valor por defecto de cadenaC:"+cadenaC);
         
 
 
 //        //Los caracteres se pueden sumar. Las cadenas NO
-//        System.out.println("-------------------------------------------");
-//        int suma_caracteres;
-//        char letraV='V';
-//        char letraX='X';        
-//        suma_caracteres=letraV+letraX;
-//        System.out.println("El carcter V y el X suman:"+suma_caracteres);
-//        
-//        
-//        System.out.println("El codifo ASCII de 'X' es:"+(int)letraX);
-//        System.out.println("El codifo ASCII de 'V' es:"+(int)letraV);
+        System.out.println("-------------------------------------------");
+        int suma_caracteres;
+        char letraV='V';
+        char letraX='X';        
+        suma_caracteres=letraV+letraX;
+        System.out.println("El carcter V y el X suman:"+suma_caracteres);
+        
+        
+        System.out.println("El codifo ASCII de 'X' es:"+(int)letraX);
+        System.out.println("El codifo ASCII de 'V' es:"+(int)letraV);
 //        
 //        
 

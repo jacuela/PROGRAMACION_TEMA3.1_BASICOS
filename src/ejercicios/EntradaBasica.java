@@ -3,9 +3,10 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package iesramonarcas;
+package ejercicios;
 
 import java.util.Scanner;
+
 
 
 
@@ -25,7 +26,8 @@ public class EntradaBasica {
         // TODO code application logic here
         
         //Usando la clase Scanner leyendo linea a linea
-        Scanner teclado = new Scanner(System.in); 
+        //Scanner teclado = new Scanner(System.in); 
+        Scanner teclado = new Scanner(System.in);
         
         String nombre;
         int edad;
@@ -33,26 +35,27 @@ public class EntradaBasica {
 
         
         //**** RECOGIENDO VALORES EN VARIAS LINEAS
-//        System.out.print("Introduce tu nombre: ");
-//        nombre = teclado.nextLine();
-//
-//        System.out.print("Introduce tu edad: ");
-//        edad = Integer.parseInt(teclado.nextLine());
-//
-//        System.out.print("Estatura (con decimales .): ");
-//        estatura = Double.parseDouble(teclado.nextLine());
-//        
-//        System.out.println("Tu nombre es " + nombre + ", tiens " + edad + "años y mides "+estatura);    
-//        System.out.printf("Tu nombre es %s, tienes %d años y mides %.2f m\n",nombre,edad,estatura);
+        System.out.print("Introduce tu nombre:");
+        nombre = teclado.nextLine();
+       
+        System.out.print("Introduce tu edad:");
+        edad = Integer.parseInt(teclado.nextLine());
+
+        System.out.print("Estatura (con decimales .):");
+        estatura = Double.parseDouble(teclado.nextLine());
+        
+        System.out.println("Tu nombre es " + nombre + ", tiens " + edad + "años y mides "+estatura);    
+        System.out.printf("Tu nombre es %s, tienes %d años y mides %.5f m\n",nombre,edad,estatura);
+
 
 
         // ********    Usando la clase Scanner leyendo varios elementos por linea
-        System.out.print("Introduce nombre, edad, altura (decimales con coma) separados por un espacio: "); 
-        nombre = teclado.next();
-        edad = teclado.nextInt();
-        estatura = teclado.nextDouble();
-        System.out.println("Tu nombre es " + nombre + ", tu edad es " + edad + " y mides "+estatura);
-        System.out.printf("Tu nombre es %s, tu edad es %d y mides %.2f\n", nombre,edad,estatura);
+//        System.out.print("Introduce nombre, edad, altura (decimales con coma) separados por un espacio: "); 
+//        nombre = teclado.next();
+//        edad = teclado.nextInt();
+//        estatura = teclado.nextDouble();
+//        System.out.println("Tu nombre es " + nombre + ", tu edad es " + edad + " y mides "+estatura);
+//        System.out.printf("Tu nombre es %s, tu edad es %d y mides %.2f\n", nombre,edad,estatura);
 
         
 
@@ -72,9 +75,29 @@ public class EntradaBasica {
 //        double media = (x1 + x2 + x3) / 3;
 //        System.out.println("La media de esos tres números es " + media);
 //
-//      
-//        //El error de mezclar nextInt / nextDouble con nextLine()
-//        System.out.print("Introduce tu nombre y tu edad separados por un espacio: "); 
+//
+
+          //*********** Porqué es mejor usar nextLine() que next()
+//          System.out.println("Dime edad:");
+//          edad = teclado.nextInt();
+//          System.out.println("Dime nombre:");
+//          nombre = teclado.nextLine();
+//
+//          System.out.println("Tu nombre es " + nombre + " y tu edad es " + edad);
+//        
+
+
+//        //*********El error de mezclar nextInt / nextDouble con nextLine()
+//          System.out.println("Dime edad:");
+//          edad = teclado.nextInt();
+//          System.out.println("Dime nombre:");
+//          nombre = teclado.nextLine();
+//
+//          System.out.println("Tu nombre es " + nombre + " y tu edad es " + edad);
+//         
+
+
+//          System.out.println("Introduce tu nombre y tu edad separados por un espacio: "); 
 //        nombre = teclado.next();
 //        edad = teclado.nextInt();
 //        System.out.println("Tu nombre es " + nombre + " y tu edad es " + edad);
@@ -88,8 +111,7 @@ public class EntradaBasica {
 //        String dato=teclado.nextLine();  //recojo otro dato
 //        System.out.println("Dato:"+dato);
 
-        
-
+          
   
     }
     
